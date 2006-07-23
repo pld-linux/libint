@@ -1,0 +1,22 @@
+--- libint-1.1.2/src/lib/libderiv/Makefile.library.orig	2003-12-05 18:33:19.000000000 +0100
++++ libint-1.1.2/src/lib/libderiv/Makefile.library	2006-07-23 17:33:43.765183250 +0200
+@@ -23,7 +23,7 @@
+ 
+ # this is how shared library is made
+ $(TOPDIR)/lib/$(NAME).la: $(LIBOBJ)
+-	$(LTLINK) $(CXX) -o $@ $^ $(LTLINKLIBOPTS)
++	$(LTLINK) $(CXX) -o $@ $^ $(TOPDIR)/lib/libint.la $(LTLINKLIBOPTS)
+ 
+ $(TOPDIR)/include/$(NAME)/$(NAME).h: $(NAME).h
+ 	$(INSTALL) $(INSTALLDIROPT) $(TOPDIR)/include/$(NAME)
+--- libint-1.1.2/src/lib/libr12/Makefile.library.orig	2003-08-01 01:49:45.000000000 +0200
++++ libint-1.1.2/src/lib/libr12/Makefile.library	2006-07-23 17:34:23.035637500 +0200
+@@ -47,7 +47,7 @@
+ 
+ # this is how shared library is made
+ $(TOPDIR)/lib/$(NAME).la: $(LIBOBJ)
+-	$(LTLINK) $(CXX) -o $@ $^ $(LTLINKLIBOPTS)
++	$(LTLINK) $(CXX) -o $@ $^ $(TOPDIR)/lib/libint.la $(LTLINKLIBOPTS)
+ 
+ $(TOPDIR)/include/$(NAME)/$(NAME).h: $(NAME).h
+ 	$(INSTALL) $(INSTALLDIROPT) $(TOPDIR)/include/$(NAME)
