@@ -1,5 +1,5 @@
 Summary:	Evaluation of certain two-body molecular integrals over Cartesian Gaussian functions
-Summary(pl):	Obliczania ca≥ek dwuelementowych cz±steczek po kartezjaÒskich funkcjach Gaussa
+Summary(pl.UTF-8):   Obliczania ca≈Çek dwuelementowych czƒÖsteczek po kartezja≈Ñskich funkcjach Gaussa
 Name:		libint
 Version:	1.1.2
 Release:	1
@@ -26,22 +26,22 @@ theory (MP2), coupled cluster singles and doubles (CCSD) method, as
 well as the lesser known highly accurate linear R12 second-order
 Moller-Plesset theory (MP2-R12).
 
-%description -l pl
-Biblioteka libint s≥uøy do obliczania tradycyjnych (odpychania
-elektronowego) i pewnych nowych dwuelementowych elementÛw macierzy
-(ca≥ek) po kartezjaÒskich funkcjach Gaussa wystÍpuj±cych we
-wspÛ≥czesnej teorii atomowej i cz±steczkowej. Jest zaprojektowana
-zw≥aszcza z my∂l± o (super)skalarnych architekturach komputerÛw.
+%description -l pl.UTF-8
+Biblioteka libint s≈Çu≈ºy do obliczania tradycyjnych (odpychania
+elektronowego) i pewnych nowych dwuelementowych element√≥w macierzy
+(ca≈Çek) po kartezja≈Ñskich funkcjach Gaussa wystƒôpujƒÖcych we
+wsp√≥≈Çczesnej teorii atomowej i czƒÖsteczkowej. Jest zaprojektowana
+zw≈Çaszcza z my≈õlƒÖ o (super)skalarnych architekturach komputer√≥w.
 libint jest wykorzystywana do implementowania metod takich jak:
-metoda Hartree-Focka (HF) i teorii funkcjona≥Ûw gÍsto∂ci Kohna-Shama
-(KS DFT), teorii zaburzeÒ Mollera-Plesseta drugiego rzÍdu (MP2),
-metody klasterowej z jedno- i dwucia≥owymi operatorami (CCSD), a takøe
-mniej znanej bardzo dok≥adnej teorii liniowej R12 Mollera-Plesseta
-drugiego rzÍdu (MP2-R12).
+metoda Hartree-Focka (HF) i teorii funkcjona≈Ç√≥w gƒôsto≈õci Kohna-Shama
+(KS DFT), teorii zaburze≈Ñ Mollera-Plesseta drugiego rzƒôdu (MP2),
+metody klasterowej z jedno- i dwucia≈Çowymi operatorami (CCSD), a tak≈ºe
+mniej znanej bardzo dok≈Çadnej teorii liniowej R12 Mollera-Plesseta
+drugiego rzƒôdu (MP2-R12).
 
 %package devel
 Summary:	Header files for libint library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki libint
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki libint
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel >= 3.0
@@ -49,19 +49,19 @@ Requires:	libstdc++-devel >= 3.0
 %description devel
 Header files for libint library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki libint.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki libint.
 
 %package static
 Summary:	Static libint library
-Summary(pl):	Statyczna biblioteka libint
+Summary(pl.UTF-8):   Statyczna biblioteka libint
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libint library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libint.
 
 %prep
