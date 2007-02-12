@@ -1,5 +1,5 @@
 Summary:	Evaluation of certain two-body molecular integrals over Cartesian Gaussian functions
-Summary(pl.UTF-8):   Obliczania całek dwuelementowych cząsteczek po kartezjańskich funkcjach Gaussa
+Summary(pl.UTF-8):	Obliczania całek dwuelementowych cząsteczek po kartezjańskich funkcjach Gaussa
 Name:		libint
 Version:	1.1.2
 Release:	1
@@ -41,7 +41,7 @@ drugiego rzędu (MP2-R12).
 
 %package devel
 Summary:	Header files for libint library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libint
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libint
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel >= 3.0
@@ -54,7 +54,7 @@ Pliki nagłówkowe biblioteki libint.
 
 %package static
 Summary:	Static libint library
-Summary(pl.UTF-8):   Statyczna biblioteka libint
+Summary(pl.UTF-8):	Statyczna biblioteka libint
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
