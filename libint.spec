@@ -1,15 +1,15 @@
 Summary:	Evaluation of certain two-body molecular integrals over Cartesian Gaussian functions
 Summary(pl.UTF-8):	Obliczania całek dwuelementowych cząsteczek po kartezjańskich funkcjach Gaussa
 Name:		libint
-Version:	1.1.2
+Version:	1.1.4
 Release:	1
 License:	GPL v2+
 Group:		Libraries
-#Source0Download: http://www.ccmst.gatech.edu/evaleev/libint/download.html
-Source0:	http://www.ccmst.gatech.edu/evaleev/libint/src/%{name}-%{version}.tar.gz
-# Source0-md5:	df23c63d46be7dd88a70a39e98f67d34
+#Source0Download:	http://www.chem.vt.edu/chem-dept/valeev/software/libint/download.html
+Source0:	http://www.chem.vt.edu/chem-dept/valeev/software/libint/src/%{name}-%{version}.tar.gz
+# Source0-md5:	6bc36ba047e23e16b5bc9c0cc8f4a9f7
 Patch0:		%{name}-link.patch
-URL:		http://www.ccmst.gatech.edu/evaleev/libint/
+URL:		http://www.chem.vt.edu/chem-dept/valeev/software/libint/libint.html
 BuildRequires:	libstdc++-devel >= 3.0
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
