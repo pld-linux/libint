@@ -2,7 +2,7 @@ Summary:	Evaluation of certain two-body molecular integrals over Cartesian Gauss
 Summary(pl.UTF-8):	Obliczanie całek dwuelementowych cząsteczek po kartezjańskich funkcjach Gaussa
 Name:		libint
 Version:	1.1.4
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Libraries
 #Source0Download:	http://www.chem.vt.edu/chem-dept/valeev/software/libint/download.html
