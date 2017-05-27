@@ -1,16 +1,19 @@
 Summary:	Evaluation of certain two-body molecular integrals over Cartesian Gaussian functions
 Summary(pl.UTF-8):	Obliczanie całek dwuelementowych cząsteczek po kartezjańskich funkcjach Gaussa
 Name:		libint
-Version:	1.1.4
-Release:	2
+Version:	1.1.6
+Release:	1
 License:	GPL v2+
 Group:		Libraries
-#Source0Download:	http://www.chem.vt.edu/chem-dept/valeev/software/libint/download.html
-Source0:	http://www.chem.vt.edu/chem-dept/valeev/software/libint/src/%{name}-%{version}.tar.gz
-# Source0-md5:	6bc36ba047e23e16b5bc9c0cc8f4a9f7
+#Source0Download: https://github.com/evaleev/libint/releases
+Source0:	https://github.com/evaleev/libint/archive/release-1-1-6/%{name}-%{version}.tar.gz
+# Source0-md5:	990f67b55f49ecc18f32c58da9240684
 Patch0:		%{name}-link.patch
-URL:		http://www.chem.vt.edu/chem-dept/valeev/software/libint/libint.html
+URL:		http://libint.valeyev.net/
+BuildRequires:	autoconf >= 2.52
+BuildRequires:	automake
 BuildRequires:	libstdc++-devel >= 3.0
+BuildRequires:	libtool >= 2:1.5
 BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -65,10 +68,13 @@ Static libint library.
 Statyczna biblioteka libint.
 
 %prep
-%setup -q
+%setup -q -n libint-release-1-1-6
 %patch0 -p1
 
 %build
+%{__libtoolize}
+%{__aclocal} -I lib/autoconf
+%{__autoconf}
 %configure \
 	--enable-shared
 
@@ -94,10 +100,13 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc LICENSE
+%doc LICENSE README
 %attr(755,root,root) %{_libdir}/libderiv-stable.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libderiv-stable.so.1
 %attr(755,root,root) %{_libdir}/libint-stable.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libint-stable.so.1
 %attr(755,root,root) %{_libdir}/libr12-stable.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libr12-stable.so.1
 
 %files devel
 %defattr(644,root,root,755)
