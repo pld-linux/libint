@@ -1,13 +1,13 @@
 Summary:	Evaluation of certain two-body molecular integrals over Cartesian Gaussian functions
 Summary(pl.UTF-8):	Obliczanie całek dwuelementowych cząsteczek po kartezjańskich funkcjach Gaussa
 Name:		libint
-Version:	1.1.6
+Version:	1.2.1
 Release:	1
-License:	GPL v2+
+License:	GPL v3+
 Group:		Libraries
 #Source0Download: https://github.com/evaleev/libint/releases
-Source0:	https://github.com/evaleev/libint/archive/release-1-1-6/%{name}-%{version}.tar.gz
-# Source0-md5:	990f67b55f49ecc18f32c58da9240684
+Source0:	https://github.com/evaleev/libint/archive/release-1-2-1/%{name}-%{version}.tar.gz
+# Source0-md5:	e34f4a677241bde114dc5282a802a067
 Patch0:		%{name}-link.patch
 URL:		http://libint.valeyev.net/
 BuildRequires:	autoconf >= 2.52
@@ -68,7 +68,7 @@ Static libint library.
 Statyczna biblioteka libint.
 
 %prep
-%setup -q -n libint-release-1-1-6
+%setup -q -n libint-release-1-2-1
 %patch0 -p1
 
 %build
@@ -100,13 +100,13 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc LICENSE README
-%attr(755,root,root) %{_libdir}/libderiv-stable.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libderiv-stable.so.1
-%attr(755,root,root) %{_libdir}/libint-stable.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libint-stable.so.1
-%attr(755,root,root) %{_libdir}/libr12-stable.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libr12-stable.so.1
+%doc CHANGES LICENSE README
+%attr(755,root,root) %{_libdir}/libderiv.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libderiv.so.1
+%attr(755,root,root) %{_libdir}/libint.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libint.so.1
+%attr(755,root,root) %{_libdir}/libr12.so.*.*.*
+%attr(755,root,root) %ghost %{_libdir}/libr12.so.1
 
 %files devel
 %defattr(644,root,root,755)
